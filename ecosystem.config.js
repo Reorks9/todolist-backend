@@ -11,8 +11,6 @@ module.exports = {
     {
       name: `${name}:${process.env.PORT}`,
       script: main,
-      exec_mode: 'cluster',
-      instances: '1',
       autorestart: true,
       max_restarts: 10,
       min_uptime: '5s',
